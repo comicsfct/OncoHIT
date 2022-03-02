@@ -18,4 +18,4 @@ For details on how we obtain somatic SNVs you can see the separate [vcall reposi
 To obtain copy number estimates we use cnvkit (Talevich et al., 2016). Namely, we use the cnvkit batch command using alignments from tumor samples (obtained from the variant calling procedure) against a pool of alignments of the normal samples.
 
 
-We also include scripts to calculate other measures of heterogeneity. This includes very simple measures of tumor mutation burden using SNVs or CNVs.
+We also include scripts to calculate other measures of heterogeneity. This includes very simple measures of tumor mutation burden using SNVs or CNVs. We also provide a script to estimate the Tumor Heterogeneity index TH (Oh et al., 2018) and the MATH score (Mroz er al., 2015). 
