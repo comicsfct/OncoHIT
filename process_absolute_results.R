@@ -1,0 +1,6 @@
+library(ABSOLUTE)
+abs_dirs <- list.dirs(".", recursive=F) 
+abs_dirs <- grep("absolute$", abs_dirs, value=T)
+samples <- sub("\\.\\/","",sub("_absolute","",abs_dirs))
+CreateReviewObject(obj.name="absolute_results", absolute.files=paste(samples,"_absolute/",samples,".ABSOLUTE.RData",sep=""), indv.results.dir="absolute_results_review", copy_num_type="total")
+ExtractReviewedResults(reviewed.pp.calls.fn="absolute_results_review/absolute_results.PP-calls_tab.txt", modes.fn="aabsolute_results_review/absolute_results.PP-modes.data.RData", out.dir.base="absolute_results_extract/", obj.name="absolute_results", copy_num_type="total", analyst.id="none") 
