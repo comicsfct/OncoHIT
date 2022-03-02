@@ -19,3 +19,5 @@ To obtain copy number estimates we use cnvkit (Talevich et al., 2016). Namely, w
 
 
 We also include scripts to calculate other measures of heterogeneity. This includes very simple measures of tumor mutation burden using SNVs or CNVs. We also provide a script to estimate the Tumor Heterogeneity index TH (Oh et al., 2018) and the MATH score (Mroz er al., 2015). 
+
+Finally, we also include a script to process somatic variants and copy number variants from one (or several samples) to be used with pyclone-vi (Gillis and Roth, 2020).
